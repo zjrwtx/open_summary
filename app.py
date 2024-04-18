@@ -6,6 +6,8 @@ from starlette.responses import StreamingResponse
 from flask_cors import CORS
 import openai
 import  json
+from dotenv import load_dotenv
+import os
 
 from base64 import b64encode
 app = Flask(__name__)
@@ -15,9 +17,15 @@ CORS(app)
 # CORS(app, resources={r"/*": {"origins": ["http://localhost:5500"]}})
 CORS(app, resources={r"/*": {"origins": "*"}})
 
+
+# 在使用API密钥和基础URL之前加载.env文件
+load_dotenv()
+
+# 现在可以通过os.environ访问这些值
+API_BASE = os.environ.get("API_BASE")
+API_KEY = os.environ.get("API_KEY")
 def get_summary(original_url):
-    API_BASE = "https://api.lingyiwanwu.com/v1"
-    API_KEY = "dbe000b3e7f44df98d6c3f330cccf5a1"  # 此处假设您已经有了相应的API_KEY
+    
     client = openai.OpenAI(api_key=API_KEY, base_url=API_BASE)
 
     reader_url = f"https://r.jina.ai/{original_url}"
