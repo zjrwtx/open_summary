@@ -46,6 +46,7 @@
 
 ## 版权信息
 &copy; 2024 微信公众号：正经人王同学. All rights reserved.
+![微信图片_20240418212643](https://github.com/zjrwtx/open_summary/assets/86822589/dbfd72a2-7986-4981-9e42-6cb5e650fe5d)
 
 ---
 
