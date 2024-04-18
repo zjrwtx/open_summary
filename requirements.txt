@@ -1,0 +1,5 @@
+Flask==2.0.2  # 用于创建后端服务
+requests==2.26.0  # 用于发送HTTP请求
+openai==0.13.0  # 用于与OpenAI API交互
+qrcode==6.1  # 用于生成二维码
+Pillow==8.4.0  # 用于图像处理，html2canvas依赖

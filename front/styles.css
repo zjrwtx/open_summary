@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#summaryOutput, #qrCodeOutput {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.loader {
+    border: 5px solid #f3f3f3; /* 浅色边框 */
+    border-top: 5px solid #3498db; /* 顶部边框使用主题颜色 */
+    border-radius: 50%; /* 圆形 */
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; /* 旋转动画 */
+    display: none; /* 默认不显示 */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+#qrCodeOutput {
+    text-align: center; /* 使文本在容器内居中 */
+    margin: 20px; /* 添加一些边距 */
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+
+/* styles.css */
+/* ... 其他样式 ... */
+
+footer .qr-container {
+    text-align: center; /* 确保二维码居中显示 */
+    margin-bottom: 10px; /* 根据需要调整 */
+}
+
+.qr-code {
+    width: 100px; /* 根据需要调整二维码图片的大小 */
+    height: auto; /* 保持图片的纵横比 */
+    margin: 5px; /* 根据需要调整 */
+}
+
+.qr-link {
+    text-decoration: none; /* 移除链接的下划线 */
+}

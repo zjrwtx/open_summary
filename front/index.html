@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正经人王同学的文章笔记分享图生成助手</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 添加 html2canvas CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="loadingIndicator" class="loader"></div>
+    <div class="container">
+        <h1>正经人王同学的文章笔记分享图生成助手</h1>
+        <p>输入任意文章地址 点击按钮即可生成无广告或推广内容的简要笔记<br> 并生成分享图给好友<br>本项目开源在github且不断新增功能中</p>
+        <input type="text" id="urlInput" placeholder="请输入你的文章地址...">
+        <button id="generateBtn">生成总结内容</button>
+        
+        <!-- 添加截图按钮 -->
+        <button id="captureBtn">生成分享图</button>
+        <!-- <div id="articletit1e">标题</div> -->
+        <div id="summaryOutput"></div>
+        <div id="qrCodeOutput"></div>
+    </div>
+   
+      <!-- 添加页脚 -->
+      <footer>
+        <div class="qr-container">
+            <a href="mailto:3038880699@qq.com" class="qr-link">
+                <img src="https://imageshub.pages.dev/file/6df032f16b5b337742503.jpg" alt="联系方式二维码" class="qr-code">
+            </a>
+        </div>
+        <footer>
+            <p>&copy; 2024 微信公众号：正经人王同学. All rights reserved.</p>
+            <p><a href="https://github.com/your-username/your-repo">本项目开源在github 欢迎贡献与star支持！</a></p>
+        </footer>
+        
+        
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> 
+</body>
+</html>
