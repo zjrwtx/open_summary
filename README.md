@@ -31,8 +31,9 @@
 ## 安装和运行
 1. 克隆项目到本地：`git clone https://github.com/zjrwtx/open_summary.git`
 2. 安装依赖：`pip install -r requirements.txt`
-3. 运行后端服务：`python app.py`
-4. 打开浏览器访问 `http://127.0.0.1:5000/`
+3. 参照.env.example 创建.env文件 填入API_BASE（大模型api端点）和API_KEY(秘钥)
+4. 运行后端服务：`python app.py`
+5. 打开浏览器访问 `http://127.0.0.1:5000/`
 
 ## 联系方式
 如有任何问题，可以通过以下方式联系我们：
