@@ -1,6 +1,8 @@
 
 
 ---
+开源地址：https://github.com/zjrwtx/open_summary
+演示视频：https://www.bilibili.com/video/BV1A1421d7Xr/?spm_id_from=333.999.0.0
 
 # 正经人王同学的文章笔记分享图生成助手
 这是一个用于生成文章摘要和分享图的Web应用。用户可以输入任意文章地址，点击按钮即可生成无广告或推广内容的简要笔记，并生成分享图给好友。本项目开源在GitHub，并且不断新增功能中。
