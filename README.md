@@ -39,9 +39,9 @@
 
 ## 安装和运行
 1. 克隆项目到本地：`git clone https://github.com/zjrwtx/open_summary.git`
-2. 安装依赖：`poetry install`
+2. 安装依赖和进入虚拟环境：`poetry install` `poetry shell`
 3. 参照.env.example 创建.env文件 填入API_BASE（大模型api端点）和API_KEY(秘钥)
-4. 运行后端服务：云端模型：`python app.py` 本地ollama模型：`python localapp.py`
+4. 运行后端服务：云端模型：`python app.py` 本地ollama模型（前提是配置好了ollama环境与模型）：`python localapp.py`
 5. cd到front目录下，启动python静态服务运行前端服务：python -m http.server 8080
 
 ## 联系方式
