@@ -4,6 +4,9 @@
 开源地址：https://github.com/zjrwtx/open_summary
 演示视频：https://www.bilibili.com/video/BV1A1421d7Xr/?spm_id_from=333.999.0.0
 
+# update news！
+1.支持ollama model api，用本地模型去总结文章啦
+
 # 正经人王同学的文章笔记分享图生成助手
 这是一个用于生成文章摘要和分享图的Web应用。用户可以输入任意文章地址，点击按钮即可生成无广告或推广内容的简要笔记，并生成分享图给好友。本项目开源在GitHub，并且不断新增功能中。
 ![微信截图_20240418224655](https://github.com/zjrwtx/open_summary/assets/86822589/a424c307-08af-4bdb-b913-894577694159)
@@ -36,10 +39,10 @@
 
 ## 安装和运行
 1. 克隆项目到本地：`git clone https://github.com/zjrwtx/open_summary.git`
-2. 安装依赖：`pip install -r requirements.txt`
+2. 安装依赖：`poetry install`
 3. 参照.env.example 创建.env文件 填入API_BASE（大模型api端点）和API_KEY(秘钥)
-4. 运行后端服务：`python app.py`
-5. 打开浏览器访问 `http://127.0.0.1:5000/`
+4. 运行后端服务：云端模型：`python app.py` 本地ollama模型：`python localapp.py`
+5. cd到front目录下，启动python静态服务运行前端服务：python -m http.server 8080
 
 ## 联系方式
 如有任何问题，可以通过以下方式联系我们：
