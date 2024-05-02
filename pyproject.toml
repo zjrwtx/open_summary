@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "open-summary"
+version = "0.1.0"
+description = ""
+authors = ["zjrwtx <3038880699@qq.com>"]
+license = "GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+requests = "^2.31.0"
+openai = "^1.25.0"
+qrcode = "^7.4.2"
+pillow = "^10.3.0"
+python-dotenv = "^1.0.1"
+flask-cors = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
